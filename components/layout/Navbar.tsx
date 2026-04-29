@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import Entypo from '@expo/vector-icons/Entypo';
 
 export default function Navbar() {
     return (
@@ -15,18 +16,28 @@ export default function Navbar() {
             flexDirection: "row",
             alignItems: "center",
             paddingHorizontal: 16,
-            justifyContent: "flex-start",
-            gap: 10,
+            justifyContent: "space-between",
             elevation: 5, // Android shadow
             shadowColor: "#000", // iOS shadow
             shadowOpacity: 0.2,
             shadowRadius: 6,
         }}>
-            {/* Logo */}
-            <FontAwesome name="space-shuttle" size={23} color="yellow" />
+            <View style={{
+                display: 'flex',
+                flexDirection: 'row',
+                gap: 10
+            }}>
+                {/* Logo */}
+                <FontAwesome name="space-shuttle" size={23} color="yellow" />
 
-            {/* Title */}
-            <Text style={{ color: 'yellow', fontFamily: 'monospace', fontSize: 20 }}>Spacelog</Text>
+                {/* Title */}
+                <Text style={{ color: 'yellow', fontFamily: 'monospace', fontSize: 20 }}>Spacelog</Text>
+            </View>
+
+            <View>
+                {/* Menu bar + Close bar */}
+                <Entypo name="menu" size={35} color="yellow" />
+            </View>
         </View>
     );
 }
