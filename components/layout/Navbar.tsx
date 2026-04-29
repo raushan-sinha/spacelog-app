@@ -1,8 +1,11 @@
-import { Text, View } from "react-native";
+import { Pressable, Text, View } from "react-native";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Entypo from '@expo/vector-icons/Entypo';
+import { useState } from "react";
 
 export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
     return (
         <View style={{
             position: "absolute",
@@ -36,7 +39,13 @@ export default function Navbar() {
 
             <View>
                 {/* Menu bar + Close bar */}
-                <Entypo name="menu" size={35} color="yellow" />
+                <Pressable onPress={() => setIsMenuOpen(!isMenuOpen)}>
+                    {isMenuOpen ? (
+                        <Entypo name="cross" size={35} color="yellow" />
+                    ) : (
+                        <Entypo name="menu" size={35} color="yellow" />
+                    )}
+                </Pressable>
             </View>
         </View>
     );
