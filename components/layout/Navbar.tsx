@@ -8,20 +8,17 @@ export default function Navbar() {
 
     return (
         <View style={{
-            position: "absolute",
-            top: 10,
-            left: 0,
-            right: 0,
-            marginHorizontal: 16,
-            height: 60,
-            backgroundColor: "#111",
-            borderRadius: 12,
             flexDirection: "row",
             alignItems: "center",
-            paddingHorizontal: 16,
             justifyContent: "space-between",
-            elevation: 5, // Android shadow
-            shadowColor: "#000", // iOS shadow
+            backgroundColor: "#111",
+            borderRadius: 12,
+            marginHorizontal: 16,
+            marginTop: 10,
+            paddingHorizontal: 16,
+            height: 60,
+            elevation: 5,
+            shadowColor: "#000",
             shadowOpacity: 0.2,
             shadowRadius: 6,
         }}>
@@ -37,16 +34,14 @@ export default function Navbar() {
                 <Text style={{ color: 'yellow', fontFamily: 'monospace', fontSize: 20 }}>Spacelog</Text>
             </View>
 
-            <View>
-                {/* Menu bar + Close bar */}
-                <Pressable onPress={() => setIsMenuOpen(!isMenuOpen)}>
-                    {isMenuOpen ? (
-                        <Entypo name="cross" size={35} color="yellow" />
-                    ) : (
-                        <Entypo name="menu" size={35} color="yellow" />
-                    )}
-                </Pressable>
-            </View>
+            {/* Menu bar + Close bar */}
+            <Pressable onPress={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? (
+                    <Entypo name="cross" size={35} color="yellow" />
+                ) : (
+                    <Entypo name="menu" size={35} color="yellow" />
+                )}
+            </Pressable>
         </View>
     );
 }
