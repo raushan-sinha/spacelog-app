@@ -10,13 +10,12 @@ export default function NavbarMenu({ onClose }: MenuCloseProps) {
     const renderItem = ({ item }: { item: MenuItemProps }) => {
         return (
             <Pressable
-                style={({ pressed }) => ({
+                style={{
                     paddingVertical: 14,
                     paddingHorizontal: 16,
                     borderBottomWidth: 1,
                     borderBottomColor: '#222',
-                    backgroundColor: pressed ? '#1a1a1a' : 'transparent',
-                })}
+                }}
                 onPress={onClose}
             >
                 <Text style={{ color: 'yellow', fontFamily: 'monospace', fontSize: 16 }}>
