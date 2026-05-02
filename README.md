@@ -1,50 +1,20 @@
-# Welcome to your Expo app 👋
+# Spacelog - Get Daily News about our Space related
+----------------------------------------------------
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Spacelog is a beautifully designed React Native mobile application that serves as your personal companion for tracking, logging, and exploring everything related to space exploration. Whether you're a casual stargazer or a dedicated space enthusiast, Spacelog puts the cosmos in your pocket.
+Track upcoming rocket launches, log your personal observations of celestial events, browse mission archives, and stay up-to-date with the latest news from agencies like NASA, ESA, and SpaceX — all within a seamless, performant mobile experience.
+---------------
 
-## Get started
+## Features: 
+---
+1. Mission Tracker — Browse and log ongoing and historical space missions
+2. Event Logger — Record personal observations of meteor showers, eclipses, and more
+3. Observatory Mode — Minimal dark-mode UI optimized for nighttime use
+4. Launch Calendar — Stay updated with upcoming rocket launches worldwide
+---------------
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Tech Stack: 
+---
+1. React Native - Core mobile framework
+2. TypeScript - Type-safe development
+3. NativeWind - Tailwind CSS utility classes for React Native
