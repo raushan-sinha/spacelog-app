@@ -4,8 +4,5 @@
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
   },
-  "cSpell.words": [
-    "Entypo",
-    "Spacelog"
-  ]
+  "cSpell.words": ["Entypo", "Pressable", "Spacelog"]
 }
