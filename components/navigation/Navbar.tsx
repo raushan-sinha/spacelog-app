@@ -4,6 +4,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Entypo from '@expo/vector-icons/Entypo';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { useState } from "react";
+import NavbarMenu from "./NavbarMenu";
 
 const NAV_TITLE = 'Spacelog'
 
@@ -26,6 +27,10 @@ export default function Navbar() {
                     )}
                 </Pressable>
             </View>
+
+            {isMenuOpen && (
+                <NavbarMenu />
+            )}
         </SafeAreaView>
     );
 }
