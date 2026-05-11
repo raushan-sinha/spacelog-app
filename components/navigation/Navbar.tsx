@@ -1,9 +1,9 @@
+import Entypo from '@expo/vector-icons/Entypo';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
-import Entypo from '@expo/vector-icons/Entypo';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import { useState } from "react";
 import NavbarMenu from "./NavbarMenu";
 
 const NAV_TITLE = 'Spacelog'
@@ -23,7 +23,7 @@ export default function Navbar() {
                     {isMenuOpen ? (
                         <Entypo name="cross" size={33} color="tomato" />
                     ) : (
-                        <MaterialIcons name="menu-open" size={33} color="white" />
+                        <MaterialCommunityIcons name="menu-down-outline" size={33} color="white" />
                     )}
                 </Pressable>
             </View>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         backgroundColor: '#000',
         borderRadius: 10,
-        padding: 16
+        padding: 12
     },
 
     navTitle: {
