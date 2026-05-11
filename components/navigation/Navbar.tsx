@@ -54,12 +54,12 @@ const styles = StyleSheet.create({
     navTitle: {
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 10,
+        gap: 5
     },
 
     title: {
         color: 'cyan',
-        fontSize: 20,
+        fontSize: 22,
         fontWeight: 'bold',
     },
 })
