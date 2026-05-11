@@ -20,9 +20,9 @@ export default function Navbar() {
 
                 <Pressable onPress={() => setIsMenuOpen(!isMenuOpen)}>
                     {isMenuOpen ? (
-                        <MaterialIcons name="menu-open" size={33} color="white" />
-                    ) : (
                         <Entypo name="cross" size={33} color="tomato" />
+                    ) : (
+                        <MaterialIcons name="menu-open" size={33} color="white" />
                     )}
                 </Pressable>
             </View>
