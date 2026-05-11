@@ -6,6 +6,11 @@ export default function NavbarMenu() {
         <View style={styles.container}>
             <FlatList
                 data={NAVMENU_LINKS}
+                horizontal
+                contentContainerStyle={{
+                    justifyContent: 'center',
+                    flexGrow: 1,
+                }}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
                     <Text style={styles.menulinks}>
@@ -25,10 +30,11 @@ const styles = StyleSheet.create({
     },
 
     menulinks: {
-        fontSize: 18,
-        marginBottom: 12,
-        backgroundColor: '#f1f1f1',
+        fontSize: 16,
+        backgroundColor: '#fbab57',
         padding: 10,
         borderRadius: 8,
+        color: '#222222',
+        marginRight: 10,
     }
 })
