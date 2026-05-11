@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
 
     menulinks: {
         fontSize: 16,
+        fontWeight: 'bold',
         backgroundColor: '#fbab57',
         padding: 10,
         borderRadius: 8,
