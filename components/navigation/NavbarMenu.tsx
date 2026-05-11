@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
 
     menulinks: {
-        fontSize: 16,
+        fontSize: 15,
         fontWeight: 'bold',
         backgroundColor: '#fbab57',
         padding: 10,
