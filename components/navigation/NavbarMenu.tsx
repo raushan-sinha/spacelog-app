@@ -13,7 +13,7 @@ export default function NavbarMenu({ onClose }: MenuCloseProps) {
                 data={NAVMENU_LINKS}
                 horizontal
                 contentContainerStyle={{
-                    justifyContent: 'center',
+                    justifyContent: 'flex-start',
                     flexGrow: 1,
                 }}
                 keyExtractor={(item) => item.id.toString()}
