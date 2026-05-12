@@ -10,9 +10,9 @@ interface ContactLinksProps {
 }
 
 const CONTACT_LINKS: ContactLinksProps[] = [
-    { url: 'https://instagram.com/', fontName: FontAwesome6, name: 'instagram', color: '#E1306C' },
-    { url: 'https://x.com/', fontName: FontAwesome6, name: 'x-twitter', color: '#ffffff' },
-    { url: 'mailto:hello@spacelog.com', fontName: MaterialCommunityIcons, name: 'email', color: '#fbab57' },
+    { url: 'https://www.instagram.com/raushan_sinha02/', fontName: FontAwesome6, name: 'instagram', color: '#E1306C' },
+    { url: 'https://x.com/84Raushan', fontName: FontAwesome6, name: 'x-twitter', color: '#ffffff' },
+    { url: 'mailto:raushankrsinha2004@gmail.com', fontName: MaterialCommunityIcons, name: 'email', color: '#fbab57' },
 ];
 
 
@@ -34,14 +34,6 @@ export default function ContactSection() {
                         )
                     })
                 }
-
-                {/* <Pressable style={styles.iconButton} onPress={() => Linking.openURL('')}>
-                    <FontAwesome6 name="x-twitter" size={24} color="#ffffff" />
-                </Pressable>
-
-                <Pressable style={styles.iconButton} onPress={() => Linking.openURL('')}>
-                    <MaterialCommunityIcons name="email" size={26} color="#fbab57" />
-                </Pressable> */}
             </View>
         </View>
     )
