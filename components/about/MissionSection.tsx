@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: '#101923',
         borderRadius: 14,
-        margin: 20,
+        margin: 10,
     },
 
     heading: {

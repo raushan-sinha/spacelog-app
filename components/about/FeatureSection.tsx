@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
         padding: 20,
         backgroundColor: '#101923',
         borderRadius: 14,
-        margin: 20,
+        margin: 10,
     },
 
     heading: {
         fontSize: 24,
         fontWeight: '700',
         color: '#fbab57',
-        marginBottom: 12,
+        marginBottom: 20,
     },
 
     card: {
