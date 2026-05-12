@@ -2,6 +2,7 @@
 import AboutHero from "@/components/about/AboutHero";
 import FeatureSection from "@/components/about/FeatureSection";
 import MissionSection from "@/components/about/MissionSection";
+import TechStack from "@/components/about/TechStack";
 import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function About() {
@@ -11,6 +12,7 @@ export default function About() {
                 <AboutHero />
                 <MissionSection />
                 <FeatureSection />
+                <TechStack />
             </View>
         </ScrollView>
     );
