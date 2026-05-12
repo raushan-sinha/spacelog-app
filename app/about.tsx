@@ -1,14 +1,18 @@
 
 import AboutHero from "@/components/about/AboutHero";
+import FeatureSection from "@/components/about/FeatureSection";
 import MissionSection from "@/components/about/MissionSection";
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function About() {
     return (
-        <View style={styles.container}>
-            <AboutHero />
-            <MissionSection />
-        </View>
+        <ScrollView>
+            <View style={styles.container}>
+                <AboutHero />
+                <MissionSection />
+                <FeatureSection />
+            </View>
+        </ScrollView>
     );
 }
 
@@ -16,6 +20,6 @@ export default function About() {
 //todo: Styles - 
 const styles = StyleSheet.create({
     container: {
-       
+
     },
 })
