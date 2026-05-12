@@ -1,20 +1,5 @@
 import { StyleSheet, Text, View, Pressable, Linking } from "react-native";
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-
-interface ContactLinksProps {
-    url: string,
-    fontName: any,
-    name: string,
-    color: string,
-}
-
-const CONTACT_LINKS: ContactLinksProps[] = [
-    { url: 'https://www.instagram.com/raushan_sinha02/', fontName: FontAwesome6, name: 'instagram', color: '#E1306C' },
-    { url: 'https://x.com/84Raushan', fontName: FontAwesome6, name: 'x-twitter', color: '#ffffff' },
-    { url: 'mailto:raushankrsinha2004@gmail.com', fontName: MaterialCommunityIcons, name: 'email', color: '#fbab57' },
-];
-
+import { CONTACT_LINKS } from "@/data";
 
 export default function ContactSection() {
     return (
