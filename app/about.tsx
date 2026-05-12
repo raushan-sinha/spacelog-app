@@ -1,8 +1,5 @@
 
-import AboutHero from "@/components/about/AboutHero";
-import FeatureSection from "@/components/about/FeatureSection";
-import MissionSection from "@/components/about/MissionSection";
-import TechStack from "@/components/about/TechStack";
+import { AboutHero, FeatureSection, MissionSection, TechStack } from "@/components/about";
 import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function About() {
