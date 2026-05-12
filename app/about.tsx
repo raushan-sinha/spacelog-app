@@ -20,6 +20,9 @@ export default function About() {
 //todo: Styles - 
 const styles = StyleSheet.create({
     container: {
-       backgroundColor: '#e4e4e4'
+       backgroundColor: '#e4e4e4',
+       flexDirection: 'column',
+       justifyContent: 'center',
+       gap: 5,
     },
 })
