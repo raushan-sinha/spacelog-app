@@ -1,5 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import { NAVMENU_LINKS } from "./navbarMenu.data";
+import { router } from "expo-router";
 
 export default function NavbarMenu() {
     return (
@@ -13,7 +14,7 @@ export default function NavbarMenu() {
                 }}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
-                    <Text style={styles.menulinks}>
+                    <Text style={styles.menulinks} onPress={() => router.push(item.path)}>
                         {item.label}
                     </Text>
                 )}
