@@ -1,8 +1,8 @@
 import { NavbarMenuTypes } from "./navbar.types";
 
 export const NAVMENU_LINKS: NavbarMenuTypes[] = [
-    { id: 1, label: 'Home' },
-    { id: 2, label: 'About' },
-    { id: 3, label: 'Docs' },
-    { id: 4, label: 'Contact' },
+    { id: 1, label: 'Home', path: '/' },
+    { id: 2, label: 'About', path: '/about' },
+    { id: 3, label: 'Docs', path: '/docs' },
+    { id: 4, label: 'Contact', path: '/contact' },
 ];
