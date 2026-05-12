@@ -19,6 +19,6 @@ export default function About() {
 //todo: Styles - 
 const styles = StyleSheet.create({
     container: {
-
+       backgroundColor: '#e4e4e4'
     },
 })
