@@ -1,4 +1,5 @@
 export interface NavbarMenuTypes {
     id: number,
-    label: string
+    label: string,
+    path: '/' | '/about' | '/docs' | '/contact',
 }
