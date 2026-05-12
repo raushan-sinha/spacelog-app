@@ -27,10 +27,11 @@ const styles = StyleSheet.create({
     },
 
     title: {
-        fontSize: 36,
+        fontSize: 33,
         fontWeight: 'bold',
         color: '#ffffff',
         marginBottom: 10,
+        textAlign: 'center',
     },
 
     subtitle: {
