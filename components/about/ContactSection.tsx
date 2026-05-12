@@ -2,6 +2,20 @@ import { StyleSheet, Text, View, Pressable, Linking } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
+interface ContactLinksProps {
+    url: string,
+    fontName: any,
+    name: string,
+    color: string,
+}
+
+const CONTACT_LINKS: ContactLinksProps[] = [
+    { url: 'https://instagram.com/', fontName: FontAwesome6, name: 'instagram', color: '#E1306C' },
+    { url: 'https://x.com/', fontName: FontAwesome6, name: 'x-twitter', color: '#ffffff' },
+    { url: 'mailto:hello@spacelog.com', fontName: MaterialCommunityIcons, name: 'email', color: '#fbab57' },
+];
+
+
 export default function ContactSection() {
     return (
         <View style={styles.container}>
@@ -10,17 +24,24 @@ export default function ContactSection() {
             </Text>
 
             <View style={styles.iconContainer}>
-                <Pressable style={styles.iconButton} onPress={() => Linking.openURL('https://instagram.com/')}>
-                    <FontAwesome6 name="instagram" size={24} color="#E1306C" />
-                </Pressable>
-                
-                <Pressable style={styles.iconButton} onPress={() => Linking.openURL('https://x.com/')}>
+                {
+                    CONTACT_LINKS.map((link, index) => {
+                        const IconComponent = link.fontName;
+                        return (
+                            <Pressable key={index} style={styles.iconButton} onPress={() => Linking.openURL(link.url)}>
+                                <IconComponent name={link.name} size={24} color={link.color} />
+                            </Pressable>
+                        )
+                    })
+                }
+
+                {/* <Pressable style={styles.iconButton} onPress={() => Linking.openURL('')}>
                     <FontAwesome6 name="x-twitter" size={24} color="#ffffff" />
                 </Pressable>
-                
-                <Pressable style={styles.iconButton} onPress={() => Linking.openURL('mailto:hello@spacelog.com')}>
+
+                <Pressable style={styles.iconButton} onPress={() => Linking.openURL('')}>
                     <MaterialCommunityIcons name="email" size={26} color="#fbab57" />
-                </Pressable>
+                </Pressable> */}
             </View>
         </View>
     )
