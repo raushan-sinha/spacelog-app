@@ -1,5 +1,5 @@
 
-import { AboutHero, FeatureSection, MissionSection, TechStack } from "@/components/about";
+import { AboutHero, ContactSection, FeatureSection, MissionSection, TechStack } from "@/components/about";
 import { ScrollView, StyleSheet, View } from "react-native";
 
 export default function About() {
@@ -10,6 +10,7 @@ export default function About() {
                 <MissionSection />
                 <FeatureSection />
                 <TechStack />
+                <ContactSection />
             </View>
         </ScrollView>
     );
