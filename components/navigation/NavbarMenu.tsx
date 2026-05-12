@@ -2,7 +2,11 @@ import { FlatList, StyleSheet, Text, View } from "react-native";
 import { NAVMENU_LINKS } from "./navbarMenu.data";
 import { router } from "expo-router";
 
-export default function NavbarMenu() {
+interface MenuCloseProps {
+    onClose: () => void;
+}
+
+export default function NavbarMenu({ onClose }: MenuCloseProps) {
     return (
         <View style={styles.container}>
             <FlatList
@@ -14,7 +18,10 @@ export default function NavbarMenu() {
                 }}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => (
-                    <Text style={styles.menulinks} onPress={() => router.push(item.path)}>
+                    <Text style={styles.menulinks} onPress={() => {
+                        router.push(item.path);
+                        onClose();
+                    }}>
                         {item.label}
                     </Text>
                 )}
