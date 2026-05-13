@@ -1,5 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 
+const STARTED_DATA = [
+    'Open the app',
+    'Browse latest space news',
+    'Tap articles to explore details',
+    'Discover planets, galaxies, and launches',
+];
+
 export default function GettingStarted() {
     return (
         <View style={styles.container}>
@@ -8,21 +15,13 @@ export default function GettingStarted() {
                 Getting Started
             </Text>
 
-            <Text style={styles.step}>
-                1. Open the app
-            </Text>
-
-            <Text style={styles.step}>
-                2. Browse latest space news
-            </Text>
-
-            <Text style={styles.step}>
-                3. Tap articles to explore details
-            </Text>
-
-            <Text style={styles.step}>
-                4. Discover planets, galaxies, and launches
-            </Text>
+            {
+                STARTED_DATA.map((item, index) => (
+                    <Text key={index} style={styles.step}>
+                        {index + 1}. {item}
+                    </Text>
+                ))
+            }
 
         </View>
     )
