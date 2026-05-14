@@ -1,5 +1,5 @@
 
-import { DocsHero, FeaturesGuide, GettingStarted } from "@/components/docs";
+import { DocsHero, FAQSection, FeaturesGuide, GettingStarted } from "@/components/docs";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default function Docs() {
@@ -9,6 +9,7 @@ export default function Docs() {
                 <DocsHero />
                 <GettingStarted />
                 <FeaturesGuide />
+                <FAQSection />
             </View>
         </ScrollView>
     );
