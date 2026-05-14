@@ -1,5 +1,6 @@
 import { FeatureGuideProps } from "./docs.types";
 
+//todo: Data for Features -
 export const FEATURES_GUIDE: FeatureGuideProps[] = [
     {
         title: 'Daily News Feed',
